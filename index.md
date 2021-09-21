@@ -1,6 +1,6 @@
 # 欢迎来到我的后花园
 
-> 这里记录了技术人生中的思考与感悟，有不当之处，欢迎各位拍砖！
+> <font face='华文中宋'>这里记录了技术人生中的思考与感悟，欢迎围观~</font>
 
 ![](https://cdn.jsdelivr.net/gh/Fairy1018/GHimage/think.jpeg)
 
