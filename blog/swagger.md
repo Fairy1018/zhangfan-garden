@@ -1,12 +1,13 @@
-1、Swagger 应用背景
-2、Swagger 搭配 Flask 实现
-      2.1 WSGI 回顾
-      2.2 Restful 回顾
-      2.3  flask-restplus重要类理解
-3、flask-restplus && swagger 代码实现
-4、Swagger UI 结果展示
-5、总结
-6、参考文献
+# flask搭配swagger使用轻松生成接口文档
+1.Swagger 应用背景
+2.Swagger 搭配 Flask 实现
+    2.1 WSGI 回顾
+    2.2 Restful 回顾
+    2.3  flask-restplus重要类理解
+3.flask-restplus && swagger 代码实现
+4.Swagger UI 结果展示
+5.总结
+6.参考文献
 <br>
 
 
@@ -117,8 +118,8 @@ Swagger UI 的路径默认为域名的根路径，直接在浏览器中输入，
 Swagger 不需要额外的逻辑代码，能够自动生成接口文档。只需在浏览器打开界面即可，并且能够实现文档同步更新，无需手动维护。**
 
 ## 六、参考链接
-[理解RESTful架构](http://www.ruanyifeng.com/blog/2011/09/restful.html)
-[flask1.1.x doc](https://flask.palletsprojects.com/en/1.1.x/tutorial/factory/)
-[flask-restplus doc](https://flask-restplus.readthedocs.io/en/stable/api.html?highlight=resource#flask_restplus.Resource)
-[WSGI接口](https://www.liaoxuefeng.com/wiki/1016959663602400/1017805733037760)
+- [理解RESTful架构](http://www.ruanyifeng.com/blog/2011/09/restful.html)
+- [flask1.1.x doc](https://flask.palletsprojects.com/en/1.1.x/tutorial/factory/)
+- [flask-restplus doc](https://flask-restplus.readthedocs.io/en/stable/api.html?highlight=resource#flask_restplus.Resource)
+- [WSGI接口](https://www.liaoxuefeng.com/wiki/1016959663602400/1017805733037760)
 
