@@ -6,7 +6,7 @@
 
 [2.python flask搭配使用swagger生成接口文档](https://fairy1018.github.io/zhangfan-garden/blog/swagger)
 
-![](https://cdn.jsdelivr.net/gh/Fairy1018/GHimage/think.jpeg)
+![](https://cdn.jsdelivr.net/gh/Fairy1018/GHimage/think2.jpg)
 
 
 
