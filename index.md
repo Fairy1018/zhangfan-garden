@@ -4,7 +4,7 @@
 
 ![](https://cdn.jsdelivr.net/gh/Fairy1018/GHimage/think.jpeg)
 
-## 文章列表
+## <center>文章列表</center>
 
 ## - [mongoDB即时性和安全性方案总结](https://fairy1018.github.io/zhangfan-garden/blog/mongo)
 
