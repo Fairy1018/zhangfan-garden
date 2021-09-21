@@ -1,37 +1,8 @@
-## Welcome to GitHub Pages
+## Welcome to Zhangfan's garden!
 
-You can use the [editor on GitHub](https://github.com/Fairy1018/zhangfan-garden/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+- [mongoDB即时性和安全性方案总结](https://fairy1018.github.io/zhangfan-garden/blog/mongo)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- [python flask搭配使用swagger生成接口文档](https://fairy1018.github.io/zhangfan-garden/blog/swagger)
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Fairy1018/zhangfan-garden/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
