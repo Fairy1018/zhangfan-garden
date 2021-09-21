@@ -74,30 +74,30 @@ readConcern:majority
 
 ### 3.3.1 验证secondary读
 步骤：
-0.在代码中设置  ``readPreference:secondary``
-1.关闭两个从节点同步  ``db.fsyncLock()``
-2.修改一条数据，默认在主节点上修改，更改为新数据
-3.查询修改的数据，验证是否为旧数据。旧数据表明读请求打到了未同步的从节点
-4.结束，打开两个从节点同步  ``db.fsyncUnlock()``
+0. 在代码中设置  ``readPreference:secondary``
+1. 关闭两个从节点同步  ``db.fsyncLock()``
+2. 修改一条数据，默认在主节点上修改，更改为新数据
+3. 查询修改的数据，验证是否为旧数据。旧数据表明读请求打到了未同步的从节点
+4. 结束，打开两个从节点同步  ``db.fsyncUnlock()``
 
 ### 3.3.2 验证majority读
 步骤:
-0.在代码中设置 ``writeConcern:majority``
-1.关闭两个从节点同步  ``db.fsyncLock()``
-2.修改一条数据，默认在主节点上修改，更改为新数据
-3.查询修改的数据，验证是否为旧数据。旧数据表明读到了majority节点的数据
-4.打开一个从节点同步 ``db.fsyncUnlock()``
-5.查询修改的数据，验证是否为新数据。新数据表明从节点已和主节点同步，majority的数据为新数据
-6.结束，打开两个从节点同步  ``db.fsyncUnlock()``
+0. 在代码中设置 ``writeConcern:majority``
+1. 关闭两个从节点同步  ``db.fsyncLock()``
+2. 修改一条数据，默认在主节点上修改，更改为新数据
+3. 查询修改的数据，验证是否为旧数据。旧数据表明读到了majority节点的数据
+4. 打开一个从节点同步 ``db.fsyncUnlock()``
+5. 查询修改的数据，验证是否为新数据。新数据表明从节点已和主节点同步，majority的数据为新数据
+6. 结束，打开两个从节点同步  ``db.fsyncUnlock()``
 
 ### 3.3.3 majority读和secondary读同时存在的情况
 步骤:
-0.在代码中设置 ``writeConcern；majority, readPreference:secondary``
-1.关闭两个从节点同步  ``db.fsyncLock()``
-2.修改一条数据，默认在主节点上修改为新数据
-3.查询修改的数据，验证是否为旧数据。旧数据表明两个从节点上的majority都为旧数据
-4.打开一个从节点同步 ``db.fsyncUnlock()``
-5.查询修改的数据，验证数据是新数据还是旧数据？
+0. 在代码中设置 ``writeConcern；majority, readPreference:secondary``
+1. 关闭两个从节点同步  ``db.fsyncLock()``
+2. 修改一条数据，默认在主节点上修改为新数据
+3. 查询修改的数据，验证是否为旧数据。旧数据表明两个从节点上的majority都为旧数据
+4. 打开一个从节点同步 ``db.fsyncUnlock()``
+5. 查询修改的数据，验证数据是新数据还是旧数据？
 
 Answer：这种情况下新旧数据都有。原因是second节点有两个，已同步的从节点的视图上看到自己和主节点都更新了，所以其majority为新数据。而未同步的节点的视图上，它显示的三个节点都未更新，所以其majority为旧数据。
 

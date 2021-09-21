@@ -13,7 +13,7 @@ swagger 很好的解决了以上问题。它能够自动生成 api 文档，并�
 ## 二、Swagger 搭配 Flask 使用
 python 提供了 flask-restplus 插件，能够很方便的实现 swagger UI。
 
- ### 2.1 WSGI 回顾
+### 2.1 WSGI 回顾
 WSGI 全称是 Web Server Gateway Interface。
 它封装了接收 http 请求、解析 http 请求、发送 http 响应的底层代码，开发人员无需关注 tcp 和 http 协议细节，只需专心写处理逻辑。
 Flask 依赖的 WSGI 服务器是 Werkzeug。Werkzeug 是一个各种 WSGI 实用程序的集合。
@@ -61,34 +61,34 @@ Restful中重要的概念如下：
 ## 三、flask-restplus && swagger 代码实现
 
 ### 3.1 生成namespace
-`archive_api = Namespace('archive', description='archive API')`
+```archive_api = Namespace('archive', description='archive API')```
 
 ### 3.2 生成metadata（model）
-`archive_model = detective_api.model("archive_model", {`
-` 'archiveData': fields.String(required=True, description="the serialization string"),`
-`'archiveName': fields.String(required=True, description="the archive name,ex:EgyptArchive")`
-`})`
+```archive_model = detective_api.model("archive_model", {```
+``` 'archiveData': fields.String(required=True, description="the serialization string"),```
+```'archiveName': fields.String(required=True, description="the archive name,ex:EgyptArchive")```
+```})```
 
 ### 3.3 对Resource类添加装饰器
-`接口url     @api.route('/')`
-`接口参数  url路径中参数   @api.doc(params={'UserId':"the description message"})`
-`接口参数  header中参数   @api.expect(parser)  `
-            `parser定义代码：parser=api.parser()  parser.add_argument('UserId',location='headers')`
-`接口参数 body中参数      @api.doc(body=archive_model) `
-`接口响应    @api.marshal_with(archive_model)`
+```接口url     @api.route('/')```
+```接口参数  url路径中参数   @api.doc(params={'UserId':"the description message"})```
+```接口参数  header中参数   @api.expect(parser)  ```
+            ```parser定义代码：parser=api.parser()  parser.add_argument('UserId',location='headers')```
+```接口参数 body中参数      @api.doc(body=archive_model) ```
+```接口响应    @api.marshal_with(archive_model)```
     
 ### 3.4 创建 API
-`detective_api = Api(version='1.0',title="Detective Server API",description="A authenticate doc for client-developer")`
+```detective_api = Api(version='1.0',title="Detective Server API",description="A authenticate doc for client-developer")```
 
 ### 3.5  添加命名空间 
-` detective_api.add_namespace(archive_api,path='/v1/archive') `
+``` detective_api.add_namespace(archive_api,path='/v1/archive') ```
 注意：add_namespace 方法内部实现了注册 resource 到当前 api ，同时可通过 path参数 可以添加命名空间的 url 前缀
 
 ### 3.6 启动 Flask 实例
-`app = Flask(__name__)`
-`detective_api.init_app(app)`
-`if __name__ == '__main__':`
-`app.run(host='0.0.0.0', port=8000, debug=True)`
+```app = Flask(__name__)```
+```detective_api.init_app(app)```
+```if __name__ == '__main__':```
+```app.run(host='0.0.0.0', port=8000, debug=True)```
 ## 四、Swagger UI 结果展示
 Swagger UI 的路径默认为域名的根路径，直接在浏览器中输入，可以看到：
 
