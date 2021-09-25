@@ -1,4 +1,4 @@
-# Redis持久化
+# Redis持久化之RDB和AOF详细对比
 
 Redis提供了不同范围的持久性选项：
 
