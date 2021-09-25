@@ -92,15 +92,15 @@ Restful中重要的概念如下：
 ## 四、Swagger UI 结果展示
 Swagger UI 的路径默认为域名的根路径，直接在浏览器中输入，可以看到：
 
-![标题](https://cdn.jsdelivr.net/gh/Fairy1018/GHimage/swagger1.jpeg)
+![标题](https://cdn.jsdelivr.net/gh/Fairy1018/Image/swagger1.jpeg)
 
 点开 get 按钮，界面如下： 里面包含了get请求的 url、header 中的参数名和描述信息、响应值和描述
 
-![get请求详细](https://cdn.jsdelivr.net/gh/Fairy1018/GHimage/swagger2.jpeg)
+![get请求详细](https://cdn.jsdelivr.net/gh/Fairy1018/Image/swagger2.jpeg)
 
 点击右上角的try it out，可以填入参数，实际调用 url
 
-![调用](https://cdn.jsdelivr.net/gh/Fairy1018/GHimage/swagger3.jpeg)
+![调用](https://cdn.jsdelivr.net/gh/Fairy1018/Image/swagger3.jpeg)
 
 ## 五、总结
 **在服务端同学自测或者和客户端同学联调时，可以使用 Swagger 进行。
