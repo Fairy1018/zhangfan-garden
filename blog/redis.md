@@ -1,5 +1,5 @@
 # Redis持久化之RDB和AOF详细对比
-> 本文为redis官方推荐的关于持久化的详细说明英文翻译版，原文传送门 [Redis Persistence](https://redis.io/topics/persistence)
+> 本文由笔者翻译自redis官方推荐的持久化选项详细说明，传送门[Redis Persistence](https://redis.io/topics/persistence)
 <br>
 在Redis中，有不同的持久化选项：
 
