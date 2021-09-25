@@ -1,6 +1,7 @@
 # Redis持久化之RDB和AOF详细对比
 > 本文为redis官方推荐的关于持久化的详细说明英文翻译版，原文传送门 [Redis Persistence](https://redis.io/topics/persistence)
-Redis提供了不同范围的持久性选项：
+<br>
+在Redis中，有不同的持久化选项：
 
 - **RDB**：RDB持久化按照指定的时间间隔，执行数据集的时间点快照。
 - **AOF**：AOF持久化记录了由服务器接收的所有写操作。服务器启动时会回放写操作，以重建原始数据集。记录写操作的格式和Redis协议是相同的，并且采用仅追加方式。当日志太大时，Redis可以在后台重写日志。
