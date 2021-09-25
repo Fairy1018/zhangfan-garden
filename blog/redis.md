@@ -1,6 +1,7 @@
 # Redis持久化之RDB和AOF详细对比
-> 本文为redis官方推荐的关于持久化的详细说明英文翻译版，原文传送门 [Redis Persistence](https://redis.io/topics/persistence)
-<br>
+> 本文为redis官方推荐的关于持久化的详细说明英文翻译版，原文传送门 [Redis Persistence](https://redis.io/topics/persistence) 
+
+
 在Redis中，有不同的持久化选项：
 
 - **RDB**：RDB持久化按照指定的时间间隔，执行数据集的时间点快照。
