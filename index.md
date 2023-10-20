@@ -1,7 +1,6 @@
-# <center>欢迎来到我的后花园</center>
+# <center>项目管理系列</center>
 
-> <font face='华文中宋'>这里记录了的思考与感悟，欢迎围观(＾Ｕ＾)ノ~ＹＯ</font>
-
+### [我理解的游戏PM](https://fairy1018.github.io/zhangfan-garden/blog/pm)
 ### [游戏项目中的风险类别及应对措施](https://fairy1018.github.io/zhangfan-garden/blog/risk)
 ### [敏捷开发VS瀑布开发](https://fairy1018.github.io/zhangfan-garden/blog/scrum)
 ### [mongoDB系列：分布式数据库即时性和安全性方案总结](https://fairy1018.github.io/zhangfan-garden/blog/mongo)
