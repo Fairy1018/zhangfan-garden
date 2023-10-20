@@ -7,4 +7,3 @@
 
 ### [python系列：flask搭配使用swagger生成接口文档](https://fairy1018.github.io/zhangfan-garden/blog/swagger)
 ### [redis系列：持久化选项之RDB和AOF优缺点全面对比](https://fairy1018.github.io/zhangfan-garden/blog/redis)
-![](https://cdn.jsdelivr.net/gh/Fairy1018/Image/休息.jpeg)
