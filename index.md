@@ -1,5 +1,6 @@
 # <center>项目管理系列</center>
 
+### [鱼骨图法分析项目延期原因和线上事故举例](https://fairy1018.github.io/zhangfan-garden/blog/yugutu)
 ### [游戏行业中PM职责](https://fairy1018.github.io/zhangfan-garden/blog/pm)
 ### [游戏项目中的风险类别及应对措施](https://fairy1018.github.io/zhangfan-garden/blog/risk)
 ### [敏捷开发VS瀑布开发](https://fairy1018.github.io/zhangfan-garden/blog/scrum)
